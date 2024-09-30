@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background: #3f4c55;
+    color: white;
+    padding: 19px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #35424a;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.project {
+    flex: 1 1 calc(25% - 15px);
+    background: #e2e2e2;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background: #35424a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4c5a66;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #35424a;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #35424a;
+    color: white;
+}
+li:hover{
+
+    cursor: pointer;
+    color: red;
+
+}
+
+h2 ul li:hover {
+    display:none;
+}
+
+#education li{
+    display: none;
+}
+
+#education li:hover{
+    display: block;
+}
+
+
+/* Basic styles for sections */
+#skills, #education {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+#skills:hover, #education:hover {
+    background-color: #f0f8ff; /* Light blue background */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* List styles */
+#skills ul, #education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Make items block on hover */
+#skills li, #education li {
+    display: block;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+/* Change color of list items on hover */
+#skills li:hover, #education li:hover {
+    color: #007BFF; /* Change text color to blue on hover */
+}
+
+#contact {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#contact h2 {
+    margin-bottom: 15px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact div {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
